@@ -6,7 +6,7 @@ class TestVigenere(TestCase):
     def test_encryption(self):
         plainText = 'TOBEORNOTTOBE'
         key = 'RELATIONSRELA'
-        cipheredText = 'KSMESZBSKKSME'
+        cipheredText = 'KSMEHZBBLKSME'
 
         self.assertEqual(cipheredText, Vigenere(plainText, None, key).encryption())
 
@@ -14,6 +14,6 @@ class TestVigenere(TestCase):
     def test_decryption(self):
         plainText = 'TOBEORNOTTOBE'
         key = 'RELATIONSRELA'
-        cipheredText = 'KSMESZBSKKSME'
+        cipheredText = 'KSMEHZBBLKSME'
 
         self.assertEqual(plainText, Vigenere(None, cipheredText, key).decryption())
